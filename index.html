@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>Adivina el número</title>
+ </head>
+
+<body>
+  
+  <main class="text-dark" >
+    <div class="container-mt text-center" >
+      
+      <h1 style="padding: 2%;">¡Adivina adivinador!</h1>
+      <img src="./image/bola-magica.png" alt="bola-magica"
+        width="400px" height="400px">
+      <h3 style="padding: 1%;"> Piensa un número del 1 al 100</h3>
+      <button id="btnInicio" class="btn btn-info">Adivinar</button>
+      <div id="adivinarDiv" style="display: none;"> 
+      <p><h5>¿Este es tu número <span id="adivinarNumero" class="font-weight-bold"></span>?</h5></p>
+      <button id="btnSi" class="btn btn-success">Si</button>
+      <button id="btnNo" class="btn btn-danger">No</button>
+      
+      </div>
+      <div id="exitoDiv" style="display: none;">
+        <p id="exitoMensaje"></p>
+        <button  class="btn btn-primary" onclick="recargar()">Jugar de nuevo</button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+  <script src="./pages/adivina.js"></script>
+</body>
+</html>
